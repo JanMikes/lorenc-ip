@@ -1,5 +1,6 @@
 /* ============================================
    Lorenc IP - Static Site Styles
+   Extracted from original WordPress theme
    ============================================ */
 
 /* Reset & Base */
@@ -15,11 +16,13 @@ html {
 }
 
 body {
-  font-family: "Roboto", Sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
-  color: #7A7A7A;
-  line-height: 1.7;
-  background: #fff;
+  font-size: 1rem;
+  color: #717061;
+  line-height: 1.62em;
+  letter-spacing: 0.1px;
+  background: #f1f5ed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -27,8 +30,12 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease, opacity 0.3s ease;
+  color: #88865a;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5d5c39;
 }
 
 img {
@@ -44,12 +51,38 @@ ul {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", Sans-serif;
   color: #242304;
-  font-weight: 600;
-  line-height: 1.29em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.167em;
+  line-height: 1em;
+  letter-spacing: 1.4px;
+}
+
+h2 {
+  font-size: 2.611em;
+  line-height: 1.021em;
+}
+
+h3 {
+  font-size: 1.944em;
+  line-height: 1.086em;
+}
+
+h5 {
+  font-size: 1.333em;
+  line-height: 1.417em;
+}
+
+h6 {
+  font-size: 1.056em;
+  line-height: 1.474em;
 }
 
 p {
-  margin-bottom: 1em;
+  margin-bottom: 1.57em;
 }
 
 p:last-child {
@@ -101,12 +134,12 @@ p:last-child {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: transparent;
+  background: #02618A;
   transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 
 .header.scrolled {
-  background: rgba(0, 0, 0, 0.88);
+  background: #02618A;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -114,7 +147,7 @@ p:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 22px 50px;
+  padding: 30px 50px;
   gap: 50px;
 }
 
@@ -130,15 +163,16 @@ p:last-child {
 
 .header-nav ul {
   display: flex;
-  gap: 30px;
+  gap: 28px;
 }
 
 .header-nav a {
   font-family: "Raleway", Sans-serif;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 700;
   color: #fff;
-  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   position: relative;
   padding: 5px 0;
   transition: color 0.3s;
@@ -286,6 +320,7 @@ p:last-child {
   font-size: 20px;
   font-weight: 600;
   color: #fff;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: color 0.3s;
 }
@@ -314,9 +349,9 @@ p:last-child {
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.45) 0%,
-    rgba(0, 0, 0, 0.25) 50%,
-    rgba(0, 0, 0, 0.35) 100%
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.3) 100%
   );
 }
 
@@ -346,8 +381,7 @@ p:last-child {
   cursor: pointer;
   white-space: nowrap;
   flex-shrink: 0;
-  transition: background 0.3s, color 0.3s;
-  /* Animation initial state */
+  /* Animation */
   opacity: 0;
   transform: translateX(-40px);
   transition: background 0.3s, color 0.3s, opacity 0.8s ease, transform 0.8s ease;
@@ -371,7 +405,7 @@ p:last-child {
   letter-spacing: 2px;
   line-height: 1.55;
   max-width: 732px;
-  /* Animation initial state */
+  /* Animation */
   opacity: 0;
   transform: translateX(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -395,7 +429,7 @@ p:last-child {
    ============================================ */
 .about {
   padding: 80px 0 60px;
-  background: #fff;
+  background: #f1f5ed;
 }
 
 .about .container {
@@ -405,7 +439,7 @@ p:last-child {
 }
 
 .about-image-wrap {
-  flex: 1;
+  flex: 0 0 44.264%;
   position: relative;
   min-width: 0;
 }
@@ -420,20 +454,23 @@ p:last-child {
 .about-image-overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.75);
+  right: 0;
+  background: #88865a;
   color: #fff;
-  padding: 28px 35px;
-  max-width: 80%;
+  padding: 35px 45px;
+  min-width: 60%;
+  text-align: center;
 }
 
 .about-image-overlay h3 {
   font-family: "Raleway", Sans-serif;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 1.944em;
+  font-weight: 400;
   color: #fff;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.086em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .about-content {
@@ -444,29 +481,31 @@ p:last-child {
 
 .about-subtitle {
   font-family: "Roboto Slab", serif;
-  font-size: 14px;
+  font-size: 1.15rem;
   font-weight: 400;
+  font-style: italic;
   color: #88865a;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 12px;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 0.5em;
   display: block;
 }
 
 .about-content h2 {
   font-family: "Raleway", Sans-serif;
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 2.611em;
+  font-weight: 400;
   color: #242304;
-  margin-bottom: 25px;
-  line-height: 1.15;
+  margin-bottom: 0.67em;
+  line-height: 1.021em;
+  text-transform: uppercase;
 }
 
 .about-content .text-block {
   margin-bottom: 30px;
-  font-size: 15px;
-  line-height: 1.85;
-  color: #7A7A7A;
+  font-size: 1rem;
+  line-height: 1.62em;
+  color: #717061;
 }
 
 .services-list {
@@ -474,8 +513,12 @@ p:last-child {
 }
 
 .service-item {
-  padding: 14px 0;
+  padding: 27px 0;
   border-bottom: 1px solid #DEDECE;
+}
+
+.service-item:first-child {
+  border-top: 1px solid #DEDECE;
 }
 
 .service-item:last-child {
@@ -484,10 +527,11 @@ p:last-child {
 
 .service-item h5 {
   font-family: "Raleway", Sans-serif;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 23px;
+  font-weight: 400;
   color: #242304;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .service-item h5 .num {
@@ -501,7 +545,7 @@ p:last-child {
    ============================================ */
 .principles {
   padding: 80px 0 90px;
-  background: #fff;
+  background: #f1f5ed;
 }
 
 .principles .container {
@@ -516,10 +560,12 @@ p:last-child {
 
 .principles-heading h1 {
   font-family: "Raleway", Sans-serif;
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 3.167em;
+  font-weight: 400;
   color: #242304;
-  line-height: 1.2;
+  line-height: 1em;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 
 .principles-accordion {
@@ -527,11 +573,11 @@ p:last-child {
 }
 
 .accordion-item {
-  border-bottom: 1px solid #DEDECE;
+  border-bottom: 1px solid #d5dbd0;
 }
 
 .accordion-item:first-child {
-  border-top: 1px solid #DEDECE;
+  border-top: 1px solid #d5dbd0;
 }
 
 .accordion-header {
@@ -547,10 +593,12 @@ p:last-child {
 .accordion-header h5 {
   font-family: "Raleway", Sans-serif;
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 700;
   color: #242304;
   margin: 0;
+  text-transform: uppercase;
   transition: color 0.3s;
+  line-height: 1;
 }
 
 .accordion-header:hover h5 {
@@ -558,7 +606,7 @@ p:last-child {
 }
 
 .accordion-icon {
-  font-size: 14px;
+  font-size: 16px;
   color: #242304;
   flex-shrink: 0;
   margin-left: 20px;
@@ -567,7 +615,6 @@ p:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
 }
 
 .accordion-content {
@@ -578,9 +625,9 @@ p:last-child {
 
 .accordion-content-inner {
   padding: 7px 0 41px 0;
-  font-size: 15px;
-  line-height: 1.85;
-  color: #7A7A7A;
+  font-size: 1rem;
+  line-height: 1.62em;
+  color: #717061;
 }
 
 .accordion-item.active .accordion-icon .icon-plus {
@@ -600,8 +647,13 @@ p:last-child {
    ============================================ */
 .case-studies {
   padding: 80px 0 100px;
-  background: #02618A;
+  background-color: #F9F9F9;
+  background-image: url('../images/contact-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
+  position: relative;
 }
 
 .case-studies-header {
@@ -616,53 +668,52 @@ p:last-child {
 
 .case-studies-header .subtitle {
   font-family: "Roboto Slab", serif;
-  font-size: 14px;
+  font-size: 1.15rem;
   font-weight: 400;
+  font-style: italic;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 12px;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 0.5em;
   display: block;
 }
 
 .case-studies-header h2 {
   font-family: "Raleway", Sans-serif;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 2.611em;
+  font-weight: 400;
   color: #fff;
-  line-height: 1.3;
+  line-height: 1.021em;
+  text-transform: uppercase;
 }
 
 .case-studies-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
+  gap: 20px;
 }
 
 .case-card {
-  padding: 45px 35px;
-  transition: background 0.3s;
+  padding: 5em 3em;
 }
 
 .case-card:nth-child(1) {
-  background: #88865a;
+  background: #88865A;
+  color: #fff;
 }
 
 .case-card:nth-child(2) {
-  background: #242304;
+  background: #000000;
+  color: #fff;
 }
 
 .case-card:nth-child(3) {
-  background: #f1f5ed;
-  color: #242304;
+  background: #FFFFFF;
+  color: #717061;
 }
 
 .case-card:nth-child(3) h5 {
   color: #242304;
-}
-
-.case-card:nth-child(3) p {
-  color: #7A7A7A;
 }
 
 .case-card-icon {
@@ -679,26 +730,27 @@ p:last-child {
 
 .case-card h5 {
   font-family: "Raleway", Sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 23px;
+  font-weight: 400;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.3em;
 }
 
 .case-card p {
-  font-size: 14px;
-  line-height: 1.85;
-  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  line-height: 1.62em;
 }
 
 /* ============================================
    Team Section
    ============================================ */
 .team {
-  padding: 100px 0 80px;
-  background: #fff;
+  padding: 80px 0 80px;
+  background: #f1f5ed;
 }
 
 .team-header {
@@ -710,52 +762,64 @@ p:last-child {
 }
 
 .team-header-left {
-  flex: 0 0 auto;
+  flex: 0 0 34.1%;
 }
 
 .team-header-left .subtitle {
   font-family: "Roboto Slab", serif;
-  font-size: 14px;
+  font-size: 1.15rem;
   font-weight: 400;
+  font-style: italic;
   color: #88865a;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 0.5em;
   display: block;
 }
 
 .team-header-left h2 {
   font-family: "Raleway", Sans-serif;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 2.611em;
+  font-weight: 400;
   color: #242304;
+  line-height: 1.021em;
+  text-transform: uppercase;
 }
 
 .team-header-center {
-  flex: 1;
-  max-width: 500px;
-  font-size: 15px;
-  line-height: 1.85;
-  padding-top: 25px;
-  color: #7A7A7A;
+  flex: 0 0 40.9%;
+  font-size: 1rem;
+  line-height: 1.62em;
+  padding-top: 37px;
+  color: #717061;
 }
 
 .team-header-right {
-  padding-top: 25px;
+  padding-top: 39px;
 }
 
 .team-header-right a {
-  font-family: "Raleway", Sans-serif;
-  font-size: 14px;
-  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
   color: #242304;
-  border-bottom: 2px solid #88865a;
-  padding-bottom: 4px;
-  transition: color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  position: relative;
+  padding-right: 1.8em;
+}
+
+.team-header-right a::after {
+  content: '\2192';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: right 0.3s;
 }
 
 .team-header-right a:hover {
-  color: #88865a;
+  color: #5d5c39;
 }
 
 .team-grid {
@@ -782,18 +846,31 @@ p:last-child {
 
 .team-member h3 {
   font-family: "Raleway", Sans-serif;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 1.944em;
+  font-weight: 400;
   color: #242304;
+  text-transform: uppercase;
+  line-height: 1.086em;
 }
 
 /* ============================================
    Contact Section
    ============================================ */
 .contact {
-  padding: 100px 0;
-  background: #f1f5ed;
+  padding: 150px 0 100px;
+  background-color: #ffffff;
+  background-image: url('../images/contact-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .contact .container {
@@ -804,33 +881,37 @@ p:last-child {
 }
 
 .contact-info {
-  flex: 0 0 36%;
+  flex: 0 0 50%;
+  padding-right: 13%;
 }
 
 .contact-info .subtitle {
   font-family: "Roboto Slab", serif;
-  font-size: 14px;
+  font-size: 1.15rem;
   font-weight: 400;
+  font-style: italic;
   color: #88865a;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 0.5em;
   display: block;
 }
 
 .contact-info h3 {
   font-family: "Raleway", Sans-serif;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 1.944em;
+  font-weight: 400;
   color: #242304;
-  margin-bottom: 25px;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  line-height: 1.086em;
 }
 
 .contact-info .desc {
   margin-bottom: 30px;
-  font-size: 15px;
-  line-height: 1.85;
-  color: #7A7A7A;
+  font-size: 1rem;
+  line-height: 1.62em;
+  color: #717061;
 }
 
 .contact-details {
@@ -843,8 +924,8 @@ p:last-child {
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  font-size: 15px;
-  color: #7A7A7A;
+  font-size: 1rem;
+  color: #717061;
 }
 
 .contact-detail .icon {
@@ -857,7 +938,7 @@ p:last-child {
 }
 
 .contact-detail a {
-  color: #7A7A7A;
+  color: #717061;
 }
 
 .contact-detail a:hover {
@@ -868,16 +949,20 @@ p:last-child {
    Footer
    ============================================ */
 .footer {
-  background: #1a1a1a url('../images/footer-bg.jpg') center center / cover no-repeat;
+  background-color: #373737;
+  background-image: url('../images/footer-bg.jpg');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  color: #fff;
+  color: #b9b9b4;
 }
 
 .footer::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.82);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .footer .container {
@@ -902,7 +987,7 @@ p:last-child {
 }
 
 .footer-company-name {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
   color: #fff;
   line-height: 1.6;
@@ -914,19 +999,20 @@ p:last-child {
 
 .footer-col h6 {
   font-family: "Raleway", Sans-serif;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 1.056em;
+  font-weight: 500;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   margin-bottom: 18px;
 }
 
 .footer-col p,
 .footer-col a {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.65);
-  line-height: 1.85;
+  font-size: 17px;
+  font-weight: 300;
+  color: #b9b9b4;
+  line-height: 1.62em;
 }
 
 .footer-col a:hover {
@@ -935,15 +1021,15 @@ p:last-child {
 
 .footer-divider {
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgba(150, 150, 140, 0.19);
   margin: 0;
 }
 
 .footer-bottom {
   text-align: center;
   padding: 28px 0 45px;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.55);
+  font-size: 15px;
+  color: #b9b9b4;
 }
 
 .footer-bottom strong {
@@ -986,8 +1072,12 @@ p:last-child {
     gap: 40px;
   }
 
+  .about-image-wrap {
+    flex: none;
+  }
+
   .about-content h2 {
-    font-size: 34px;
+    font-size: 2em;
   }
 
   .principles .container {
@@ -1000,11 +1090,7 @@ p:last-child {
   }
 
   .principles-heading h1 {
-    font-size: 34px;
-  }
-
-  .accordion-header h5 {
-    font-size: 20px;
+    font-size: 2.5em;
   }
 
   .case-studies-header {
@@ -1014,7 +1100,11 @@ p:last-child {
 
   .case-studies-grid {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 20px;
+  }
+
+  .case-card {
+    padding: 3em 2em;
   }
 
   .team-header {
@@ -1022,8 +1112,13 @@ p:last-child {
     gap: 15px;
   }
 
+  .team-header-left {
+    flex: none;
+  }
+
   .team-header-center {
     padding-top: 0;
+    flex: none;
   }
 
   .team-header-right {
@@ -1035,12 +1130,17 @@ p:last-child {
     gap: 25px;
   }
 
+  .contact {
+    padding: 80px 0;
+  }
+
   .contact .container {
     flex-direction: column;
   }
 
   .contact-info {
     flex: none;
+    padding-right: 0;
   }
 
   .footer-main {
@@ -1097,16 +1197,16 @@ p:last-child {
   }
 
   .about-content h2 {
-    font-size: 26px;
+    font-size: 1.8em;
   }
 
   .about-image-overlay {
-    max-width: 90%;
-    padding: 15px 20px;
+    padding: 20px 25px;
+    min-width: 70%;
   }
 
   .about-image-overlay h3 {
-    font-size: 16px;
+    font-size: 1.2em;
   }
 
   .principles {
@@ -1114,7 +1214,7 @@ p:last-child {
   }
 
   .principles-heading h1 {
-    font-size: 28px;
+    font-size: 2em;
   }
 
   .accordion-header {
@@ -1134,11 +1234,11 @@ p:last-child {
   }
 
   .case-studies-header h2 {
-    font-size: 24px;
+    font-size: 1.6em;
   }
 
   .case-card {
-    padding: 35px 25px;
+    padding: 2.5em 2em;
   }
 
   .team {
@@ -1146,7 +1246,7 @@ p:last-child {
   }
 
   .team-header-left h2 {
-    font-size: 24px;
+    font-size: 1.6em;
   }
 
   .team-grid {
@@ -1154,16 +1254,28 @@ p:last-child {
     gap: 30px;
   }
 
+  .team-member h3 {
+    font-size: 1.4em;
+  }
+
   .contact {
     padding: 60px 0;
   }
 
   .contact-info h3 {
-    font-size: 22px;
+    font-size: 1.4em;
   }
 
   .footer-main {
     padding: 50px 0 30px;
     gap: 30px;
+  }
+
+  .service-item {
+    padding: 20px 0;
+  }
+
+  .service-item h5 {
+    font-size: 18px;
   }
 }
