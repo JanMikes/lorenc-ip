@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Sans-serif;
   font-weight: 400;
   color: #7A7A7A;
   line-height: 1.7;
@@ -42,10 +42,10 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Sans-serif;
   color: #242304;
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 1.29em;
 }
 
 p {
@@ -134,7 +134,7 @@ p:last-child {
 }
 
 .header-nav a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #fff;
@@ -282,7 +282,7 @@ p:last-child {
 }
 
 .mobile-menu-nav a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #fff;
@@ -336,7 +336,7 @@ p:last-child {
   display: inline-block;
   background: #f1f5ed;
   color: #41413F;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", Sans-serif;
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
@@ -364,7 +364,7 @@ p:last-child {
 }
 
 .hero-text {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 18px;
   color: #fff;
   text-transform: uppercase;
@@ -428,7 +428,7 @@ p:last-child {
 }
 
 .about-image-overlay h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 22px;
   font-weight: 600;
   color: #fff;
@@ -443,7 +443,7 @@ p:last-child {
 }
 
 .about-subtitle {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 14px;
   font-weight: 400;
   color: #88865a;
@@ -454,7 +454,7 @@ p:last-child {
 }
 
 .about-content h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 42px;
   font-weight: 700;
   color: #242304;
@@ -483,7 +483,7 @@ p:last-child {
 }
 
 .service-item h5 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 17px;
   font-weight: 600;
   color: #242304;
@@ -515,7 +515,7 @@ p:last-child {
 }
 
 .principles-heading h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 42px;
   font-weight: 700;
   color: #242304;
@@ -545,7 +545,7 @@ p:last-child {
 }
 
 .accordion-header h5 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 23px;
   font-weight: 600;
   color: #242304;
@@ -615,7 +615,7 @@ p:last-child {
 }
 
 .case-studies-header .subtitle {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 14px;
   font-weight: 400;
   color: #fff;
@@ -626,7 +626,7 @@ p:last-child {
 }
 
 .case-studies-header h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 36px;
   font-weight: 700;
   color: #fff;
@@ -678,7 +678,7 @@ p:last-child {
 }
 
 .case-card h5 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
@@ -714,7 +714,7 @@ p:last-child {
 }
 
 .team-header-left .subtitle {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 14px;
   font-weight: 400;
   color: #88865a;
@@ -725,7 +725,7 @@ p:last-child {
 }
 
 .team-header-left h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 36px;
   font-weight: 700;
   color: #242304;
@@ -745,7 +745,7 @@ p:last-child {
 }
 
 .team-header-right a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #242304;
@@ -781,7 +781,7 @@ p:last-child {
 }
 
 .team-member h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 22px;
   font-weight: 600;
   color: #242304;
@@ -808,7 +808,7 @@ p:last-child {
 }
 
 .contact-info .subtitle {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 14px;
   font-weight: 400;
   color: #88865a;
@@ -819,7 +819,7 @@ p:last-child {
 }
 
 .contact-info h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: #242304;
@@ -913,7 +913,7 @@ p:last-child {
 }
 
 .footer-col h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #fff;
